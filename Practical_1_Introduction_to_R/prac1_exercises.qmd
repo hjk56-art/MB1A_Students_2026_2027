@@ -3,6 +3,11 @@ title: "Practical_1_Introduction_to_R/prac1_exercises.qmd"
 author: "Harry K"
 ---
 ```{r}
+library(tidyverse)
+library(gt)
+```
+
+```{r}
 round(3.14159)
 ```
 
@@ -22,6 +27,40 @@ print(z)
 print(class(x))
 ```
 ```{r}
+```
 
+
+```{r}
+all_my_pets <- c("dog", "horse", "guinea pig", "chicken", "cat")
+print(all_my_pets[4])
+only_bird <- all_my_pets[4]
+print(only_bird)
+```
+```{r}
+
+
+
+print(my_data_frame)
+my_data_frame <- tibble(
+  fruit = c("apple", "pear", "banana"),
+  length = c(22, 30, 55),
+  weight = c(150, 165, 170)
+)
+
+gt(my_data_frame)
+```
+```{r}
+# for example
+df <- tibble(
+  cell_ID = c("CX1", "CX2"),
+  treated = c(TRUE, FALSE),
+  num_cells_before = c(5415, 8123),
+  num_cells_after = c(1432, 7543)
+)
+
+gt(df)
+```
+```{r}
+weather <- read_csv("data/weather_data.csv")
 ```
 
