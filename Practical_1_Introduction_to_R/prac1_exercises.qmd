@@ -1,0 +1,27 @@
+---
+title: "Practical_1_Introduction_to_R/prac1_exercises.qmd"
+author: "Harry K"
+---
+```{r}
+round(3.14159)
+```
+
+```{r}
+print(rep(5, 7))
+```
+
+```{r}
+x <- 20
+y <- "silly string"
+z <- TRUE
+
+print(x)
+print(y)
+print(z)
+
+print(class(x))
+```
+```{r}
+
+```
+
